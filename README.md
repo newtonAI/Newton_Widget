@@ -3,7 +3,7 @@
 This widget allows you to implement the Newton Job Search in your website.
 
 # Demo
-
+[Click here for a live demo](https://newton.ai/demo)
 # Installation
 Include the css and js file in your page. Note that jQuery is required
 
