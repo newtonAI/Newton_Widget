@@ -1,0 +1,192 @@
+.newton-search-holder{
+	position: relative;
+	cursor: pointer;
+}
+
+.newton-search-holder div#jobListingNewton {
+	position: absolute;
+	z-index: 999;
+	background: #808B92;
+	width: 400px;
+	display:none;
+	min-height: 230px;
+}
+
+.newton-search-holder ul#categoryListingNewton {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	-webkit-transition: width 0.5s ease-in-out;
+	-moz-transition: width 0.5s ease-in-out;
+	-o-transition: width 0.5s ease-in-out;
+	transition: width 0.5s ease-in-out;
+	width:100%;
+	z-index:500;
+}
+
+.newton-search-holder ul#categoryListingNewton > li {
+	font-weight: normal;
+	text-align: left;
+	width: 100%;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 10px 0px !important;
+	float: none;
+}
+
+.newton-search-holder .newton-image-holder > img {
+    max-height: 20px;
+}
+
+.newton-search-holder .newton-image-holder {
+    display: inline-block;
+    width: 47px;
+    text-align: center;
+}
+
+.newton-search-holder ul#categoryListingNewton.inactive {
+    width: 47px;
+    border-right: 1px solid #9AA2A8;
+}
+
+.newton-search-holder #jobByCatListingNewton{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: calc(100% - 45px);
+	position: absolute;
+	top: 0;
+	right: 0px;
+	z-index: 450;
+	background: #A2B1BA;
+	max-height: 280px;
+	overflow: auto;
+	border-top: 1px solid #808B92;
+	-webkit-transition: width 0.5s ease-in-out;
+	-moz-transition: width 0.5s ease-in-out;
+	-o-transition: width 0.5s ease-in-out;
+	transition: width 0.5s ease-in-out;
+	min-height: 230px;
+}
+
+.newton-search-holder #jobByCatListingNewton > li {
+	height: auto;
+	font-weight: normal;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.newton-search-holder #jobByCatListingNewton.inactive {
+    width:0px;
+}
+
+.newton-search-holder .popover-holder.active > #jobListingNewton{
+  display:block;
+}
+
+.newton-search-holder.active > #jobListingNewton {
+    display: block;
+}
+
+.newton-search-holder li:hover {
+	background-color:rgba(255,255,255,.2);
+}
+.newton-search-holder li.active {
+	background-color:rgba(255,255,255,.2);
+}
+
+ul#jobByCatListingNewton > li > a {
+    color: #333333;
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: left 3s, width 3s;
+    -moz-transition: left 3s, width 3s;
+    transition: left 3s, width 3s;
+    left: 0;
+    font-size: 15px;
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.newton-search-loading-spinner {
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  -moz-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border: 8px solid #ffffff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.newton-search-loading-spinner {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: calc(50% - 15px);
+  margin: -15px 0 -15px;
+}
