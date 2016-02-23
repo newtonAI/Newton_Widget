@@ -8,15 +8,17 @@ This widget allows you to implement the Newton Job Search in your website.
 Include the css and js file in your page. Note that jQuery is required
 
 ```html
-<link href="css/search-newton-1.0.0.css" rel="stylesheet">
+<link href="css/search-newton-1.0.1.css" rel="stylesheet">
 ```
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 ```
 ```html
-<script src="js/search-newton-1.0.0.js"></script>
+<script src="js/search-newton-1.0.1.js"></script>
 ```
+
+There's also a .zip file to use this plugin in Wordpress
 
 # Usage
 ```javascript
