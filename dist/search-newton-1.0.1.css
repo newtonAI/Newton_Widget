@@ -109,6 +109,7 @@ box-shadow: none;
 
 .newton-search-holder.active > #jobListingNewton {
     display: block;
+    position: fixed;
 }
 
 .newton-search-holder li:hover {
